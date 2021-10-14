@@ -18,7 +18,7 @@ async function run() {
                     hash VARCHAR(512) NOT NULL
                 );           
                 CREATE TABLE favorites (
-                    id PRIMARY KEY NOT NULL,
+                    id TEXT PRIMARY KEY NOT NULL,
                     owner_id INTEGER NOT NULL REFERENCES users(id)
             );
         `);
